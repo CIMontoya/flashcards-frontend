@@ -11,7 +11,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:3001')
+    fetch('https://flashcards-cm.herokuapp.com/')
     .then(data => data.json())
     .then(messagesJSON => {
       this.setState({
